@@ -36,7 +36,7 @@ function SeminarList({ seminars, setSeminars }: SeminarListProps) {
   if (loading) {
     return (
       <div className="seminar-list loading">
-        <Loader className="animate-spin" size={48} />
+        <Loader data-testid="loader" className="animate-spin" size={48} />
         <p>Загрузка семинаров...</p>
       </div>
     );
